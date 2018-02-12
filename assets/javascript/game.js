@@ -32,7 +32,7 @@
 
   var DOM = {
     render() {
-      gameSetup.newrandomNumber();
+      // gameSetup.newrandomNumber();
   $("#js-randomNumber").text(gameSetup.randomNumber);
   $("#js-totalScore").text(gameSetup.totalScore);
   $("#js-wins").text(gameSetup.winCount);
@@ -78,7 +78,7 @@
      winOrLose() {
       //test if user won
       if(gameSetup.didUserWin() ) {
-        gameSetup.increaseWinCount();
+        gameSetup.increasewinCount();
         DOM.render();
         alert("You won!!!");
         this.startNewRound();
@@ -86,7 +86,7 @@
 
        //test if user lost
       if(gameSetup.didUserLose() ) {
-        gameSetup.increaseLossCount();
+        gameSetup.increaselossCount();
         DOM.render();
         alert("You lost!!!");
         this.startNewRound();
@@ -182,6 +182,7 @@
     }
   };
 
+gameSetup.nextRound();
 
   
 
