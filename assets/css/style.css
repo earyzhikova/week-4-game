@@ -1,0 +1,65 @@
+.container {
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 10px 200px; 
+}
+
+#collectorName {
+    width: 250px;
+    height: 80px;
+    color: blue;
+    background: grey;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+#collectorRules {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    background-color: blueviolet;
+}
+
+#collectorNumber {
+    width: 150px;
+    height: 50px;
+    background: yellowgreen;
+    float: left;
+}
+
+#collectorScore {
+    width: 100px;
+    height: 80px;
+    background: yellow;
+    float: left;
+}
+
+#collectorCrystals {
+    background: rgb(34, 1, 1);
+    height: 80px;
+
+
+}
+
+#totalScore {
+    width: 150px;
+    height: 50px;
+    background-color: green;
+}
+
+#visibleNumber {
+    width: 150px;
+    height: 60px;
+    background-color: brown;
+}
+
+
+img {
+    width: 100px;
+    height: 100px;
+   
+}
+
+
