@@ -42,6 +42,7 @@
     color: white;
     padding:10px;
     font-size: 25px;
+     margin-left: 10px;
 }
 
 #collectorScore {
@@ -66,7 +67,9 @@
     height: 50px;
     background-color: blueviolet;
     padding: 20px;
-    color: white;   
+    color: white; 
+    font-size: 15px;
+     margin-left: 5px;
 }
 
 #visibleNumber {
@@ -75,6 +78,8 @@
     background-color: blueviolet;
     text-align: center;
     color: white;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 

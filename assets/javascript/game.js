@@ -32,6 +32,7 @@
 
   var DOM = {
     render() {
+      gameSetup.newrandomNumber();
   $("#js-randomNumber").text(gameSetup.randomNumber);
   $("#js-totalScore").text(gameSetup.totalScore);
   $("#js-wins").text(gameSetup.winCount);
@@ -81,7 +82,7 @@
         DOM.render();
         alert("You won!!!");
         this.startNewRound();
-        } else { /*do nothing - game in play*/}
+        } else { /*do nothing */}
 
        //test if user lost
       if(gameSetup.didUserLose() ) {
@@ -89,7 +90,7 @@
         DOM.render();
         alert("You lost!!!");
         this.startNewRound();
-      } else { /*do nothing - game in play*/}
+      } else { /*do nothing */}
 
     },
 
@@ -131,8 +132,6 @@
   //new object inherit the class
 
   var crystal1 = new Crystal();
- console.log(crystal1.pointValue);
-
   var crystal2 = new Crystal();
   var crystal3 = new Crystal();
   var crystal4 = new Crystal();
@@ -147,9 +146,11 @@
     increasewinCount() {
       this.winCount++;
     },
+
     increaselossCount() {
     this.lossCount++;
   },
+  
     newrandomNumber() {
       this.randomNumber = (Math.floor(Math.random() * 102) + 19);
   },
